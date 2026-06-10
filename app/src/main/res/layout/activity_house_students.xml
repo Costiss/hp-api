@@ -1,54 +1,103 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/bg_gradient"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="20dp">
 
-    <RadioGroup
-        android:id="@+id/rgHouses"
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Estudantes por Casa"
+        android:textColor="@color/parchment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:fontFamily="serif"
+        android:layout_marginBottom="16dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        style="@style/Widget.Hpapi.Card"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginBottom="8dp">
+        android:layout_marginBottom="16dp">
 
-        <RadioButton
-            android:id="@+id/rbGryffindor"
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Gryffindor" />
+            android:orientation="vertical"
+            android:padding="16dp">
 
-        <RadioButton
-            android:id="@+id/rbSlytherin"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Slytherin" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Escolha uma casa"
+                style="@style/Text.Hpapi.SectionLabel"
+                android:layout_marginBottom="8dp" />
 
-        <RadioButton
-            android:id="@+id/rbHufflepuff"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hufflepuff" />
+            <RadioGroup
+                android:id="@+id/rgHouses"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
-        <RadioButton
-            android:id="@+id/rbRavenclaw"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Ravenclaw" />
+                <RadioButton
+                    android:id="@+id/rbGryffindor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="6dp"
+                    android:text="Gryffindor"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/gold" />
 
-    </RadioGroup>
+                <RadioButton
+                    android:id="@+id/rbSlytherin"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="6dp"
+                    android:text="Slytherin"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/gold" />
 
-    <Button
+                <RadioButton
+                    android:id="@+id/rbHufflepuff"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="6dp"
+                    android:text="Hufflepuff"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/gold" />
+
+                <RadioButton
+                    android:id="@+id/rbRavenclaw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="6dp"
+                    android:text="Ravenclaw"
+                    android:textColor="@color/text_primary"
+                    android:buttonTint="@color/gold" />
+
+            </RadioGroup>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.button.MaterialButton
         android:id="@+id/btnSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Buscar"
-        android:layout_marginBottom="8dp" />
+        app:icon="@android:drawable/ic_menu_search"
+        app:iconGravity="textStart"
+        app:iconTint="@color/midnight_dark"
+        android:layout_marginBottom="16dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvStudents"
         android:layout_width="match_parent"
         android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="8dp"
         android:layout_weight="1" />
 
 </LinearLayout>

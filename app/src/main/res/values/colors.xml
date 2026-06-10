@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!-- Legacy palette (kept for compatibility) -->
     <color name="purple_200">#FFBB86FC</color>
     <color name="purple_500">#FF6200EE</color>
     <color name="purple_700">#FF3700B3</color>
@@ -7,4 +8,23 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!-- Hogwarts-inspired theme -->
+    <color name="midnight">#0E1A2B</color>
+    <color name="midnight_dark">#08111E</color>
+    <color name="surface">#16263D</color>
+    <color name="surface_variant">#1E3047</color>
+    <color name="gold">#D4AF37</color>
+    <color name="gold_light">#E8C76B</color>
+    <color name="gold_dark">#A8861F</color>
+    <color name="parchment">#F5EEDC</color>
+    <color name="text_primary">#F3ECDA</color>
+    <color name="text_secondary">#A9B6C7</color>
+    <color name="divider">#2A3D57</color>
+
+    <!-- House accents -->
+    <color name="gryffindor">#9B1B1B</color>
+    <color name="slytherin">#1A6B3C</color>
+    <color name="hufflepuff">#E0A800</color>
+    <color name="ravenclaw">#2A4A8B</color>
 </resources>

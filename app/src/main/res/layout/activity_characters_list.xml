@@ -9,15 +9,23 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Feitiços"
+        android:text="Personagens"
         android:textColor="@color/parchment"
         android:textSize="24sp"
         android:textStyle="bold"
         android:fontFamily="serif"
+        android:layout_marginBottom="4dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Toque em Copiar ID para usar na busca"
+        android:textColor="@color/text_secondary"
+        android:textSize="13sp"
         android:layout_marginBottom="12dp" />
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/rvSpells"
+        android:id="@+id/rvCharacters"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"

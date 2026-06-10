@@ -23,6 +23,7 @@
         </activity>
 
         <activity android:name=".CharacterActivity" android:exported="false" />
+        <activity android:name=".CharactersListActivity" android:exported="false" />
         <activity android:name=".TeacherActivity" android:exported="false" />
         <activity android:name=".HouseStudentsActivity" android:exported="false" />
         <activity android:name=".SpellsActivity" android:exported="false" />
