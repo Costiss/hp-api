@@ -10,7 +10,7 @@ interface HpApiService {
     @GET("api/characters")
     suspend fun getAllCharacters(): List<Character>
 
-    @GET("api/characters/{id}")
+    @GET("api/character/{id}")
     suspend fun getCharacterById(@Path("id") id: String): List<Character>
 
     @GET("api/characters/staff")
