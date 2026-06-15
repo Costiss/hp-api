@@ -15,6 +15,12 @@ class SpellAdapter(
 
     inner class SpellViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         val tvName: TextView = itemView.findViewById(R.id.tvSpellName)
+
+        // Criando uma função para associar os dados e o clique juntos
+        fun bind(spell: Spell, onSpellClick: (Spell) -> Unit) {
+            tvName.text = spell.name
+            itemView.setOnClickListener { onSpellClick(spell) }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SpellViewHolder {
